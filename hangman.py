@@ -51,8 +51,10 @@ Instrucciones: adivinar la palabra, letra por letra!
         except TypeError: print('Debes ingresar una letra!\n')
         except AssertionError: print('Debes ingresar una letra!\n')
     if lines == word:
+        print('\nVidas:',' '.join(hearts))
         print(f'\nHaz adivinado la palabra {"".join(word)}!')
     else:
+        print('\nVidas:',' '.join(hearts))
         print(f'\nHaz perdido, la palabra era {"".join(word)}')
 
 
