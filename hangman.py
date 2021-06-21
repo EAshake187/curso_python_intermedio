@@ -8,10 +8,10 @@ with open('./files/data.txt', 'r', encoding='utf-8') as file:
 
 
 ############ Selecciona una palabra al azar ############
-def random_word(): 
+def random_word():
+    global word
     word = list(random.choice(WORDS).upper())
     return word
-word = random_word()
 
 ############ Corrije palabras acentuadas ############
 VOCALS = {'Á':'A','É':'E','Í':'I','Ó':'O','Ú':'U'}
@@ -116,7 +116,7 @@ def main():
 
 -+-+-+-+-+-+--+-+-+-+-+-+--+-+-+-+-+-+--+-+-+-+-+-+--+-+-+-+-+-+''')
             print(f'\nVidas: {" ".join(hearts)} | Puntaje:{score}{hangman[lives+1]}\n{" ".join(lines)}')
-            #print(word) #Borrar el '#' para imprimir la palabra a adivinar
+            print(word) #Borrar el '#' para imprimir la palabra a adivinar
             try:
                 letter = input('Ingresa una letra: ').upper() #Una letra ingresada por el usuario
                 assert len(letter) > 0 #En caso de que no se ingrese nada
