@@ -12,4 +12,4 @@ _Hangman o el Ahorcado, es un juego cuyo objetivo se trata de adivinar una palab
 
 ## Expresiones de Gratitud 🎁
 
-* Gracias a la platzi, su plataforma y al profe [facmartoni ](https://github.com/facmartoni) 📢 
+* Gracias a la plataforma de platzi, y al profe [facmartoni ](https://github.com/facmartoni) 📢 
