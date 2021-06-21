@@ -116,7 +116,7 @@ def main():
 
 -+-+-+-+-+-+--+-+-+-+-+-+--+-+-+-+-+-+--+-+-+-+-+-+--+-+-+-+-+-+''')
             print(f'\nVidas: {" ".join(hearts)} | Puntaje:{score}{hangman[lives+1]}\n{" ".join(lines)}')
-            print(word) #Borrar el '#' para imprimir la palabra a adivinar
+            #print(word) #Borrar el '#' para imprimir la palabra a adivinar
             try:
                 letter = input('Ingresa una letra: ').upper() #Una letra ingresada por el usuario
                 assert len(letter) > 0 #En caso de que no se ingrese nada
